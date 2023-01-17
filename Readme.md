@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Elena Salomon](https://up.htmlacademy.ru/htmlcss/36/user/2215723).
-* Наставник: `Неизвестно`.
+* Наставник: [Саша Сударев](https://htmlacademy.ru/profile/id1152185).
 
 ---
 
