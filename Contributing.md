@@ -12,6 +12,7 @@
 
 <img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29034537-353cee30-7ba1-11e7-8db2-f18845f308da.png">
 
+
 - Когда вы обновили `master`, приступайте к выполнению следующего задания.
 
 --
