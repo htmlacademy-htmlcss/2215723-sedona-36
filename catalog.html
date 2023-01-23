@@ -126,13 +126,15 @@
 
     <section class="filter-results">
       <h2 class="visually-hidden">Результаты поиска</h2>
-      <p class="p-results"><strong>Найдено гостиниц: 38</strong></p>
+      <p class="p-results"><strong>Найдено гостиниц: <span class="calculation-apartment">38</span></strong></p>
       <div class="results-control">
-        <select class="select-control" aria-label="Сортировка">
+
+        <select class="select-control">
           <option value="cheap" selected>Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
+
         <div class="type-button-results">
           <ul class="type-button-results-list">
             <li class="type-button-results-item">
@@ -152,10 +154,34 @@
             </li>
           </ul>
         </div>
+
+      </div>
+      <div class="catalog-content">
+        <ol class="catalog-list">
+          <li class="catalog-item">
+            <a class="catalog-link" href="#">
+              <img class="catalog-item-image" src="#" alt="Звездное небо из пещеры">
+              <h3 class="catalog-title">Amara Resort & Spa</h3>
+            </a>
+            <p class="p-apartment">
+              <span class="type-apartament">Гостиница</span>
+              <b class="apartment-price">От 4000 ₽</b>
+            </p>
+            <div class="apartment-button">
+            <a class="button" href="#">Подробнее</a>
+            <button class="button" type="button">В избранное</button>
+            </div>
+            <div class="apartment-rating">
+              <button class="button" type="button">Рейтинг: <span class="number-rating">8,5</span></button>
+              <!-- вернуться после лайва -->
+            </div>
+          </li>
+
+
+        </ol>
       </div>
 
-
-
     </section>
+
     </main>
   </body>
