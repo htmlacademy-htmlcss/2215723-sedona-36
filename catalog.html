@@ -5,7 +5,7 @@
     <title>Каталог</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="header-main">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
           <img class="header-logo" alt="Логотип города Седона" src="#">
@@ -30,19 +30,18 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
-
             </a>
           </li>
           <li class="navigation-item">
-            <button class="button" type="button">Хочу сюда</button>
+            <form class="form-button" action="https://echo.htmlacademy.ru/" method="post">
+              <button class="button" type="submit">Хочу сюда</button>
+             </form>
           </li>
         </ul>
       </nav>
     </header>
-
     <main class="main-inner">
       <section class="filter-search">
-
         <header class="inner-header">
          <h1 class="inner-header-title">Гостиницы Седоны</h1>
          <ul class="breadcrumbs">
@@ -55,7 +54,6 @@
           </li>
         </ul>
         </header>
-
         <div class="filter">
           <h2 class="visually-hidden">Выбор гостиниц по фильтрам</h2>
           <div class="filter-left">
@@ -80,7 +78,6 @@
                     </li>
                   </ul>
               </fieldset>
-
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип Жилья:</legend>
                   <ul class="catalog-filter-list">
@@ -103,7 +100,6 @@
               </fieldset>
             </form>
           </div>
-
           <div class="filter-right">
             <form class="filter-right-form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="catalog-filter-group">
@@ -113,28 +109,24 @@
                   <input type="range" name="price-range" min="0" max="11000" value="9000">
                   <!-- вернуться после лайва -->
               </fieldset>
-
               <fieldset class="catalog-filter-group">
                 <legend class="visually-hidden">Настройки выбора</legend>
                 <button class="button" type="submit">Применить</button>
-                <button class="button" type="submit">Сбросить</button>
+                <button class="button" type="reset">Сбросить</button>
               </fieldset>
             </form>
           </div>
         </div>
     </section>
-
     <section class="filter-results">
       <h2 class="visually-hidden">Результаты поиска</h2>
       <p class="p-results"><strong>Найдено гостиниц: <span class="calculation-apartment">38</span></strong></p>
       <div class="results-control">
-
         <select class="select-control">
           <option value="cheap" selected>Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-
         <div class="type-button-results">
           <ul class="type-button-results-list">
             <li class="type-button-results-item">
@@ -154,7 +146,6 @@
             </li>
           </ul>
         </div>
-
       </div>
       <div class="catalog-content">
         <ol class="catalog-list">
@@ -234,9 +225,7 @@
           </li>
         </ol>
       </div>
-
       <div class="catalog-divider"></div>
-
       <div class="pagination-frame">
         <span class="visually-hidden">Выбор страницы выдачи</span>
         <ul class="pagination">
@@ -261,23 +250,17 @@
           </li>
         </ul>
       </div>
-
     </section>
-
     <section class="subscribe">
       <div class="subscribe-main">
-
        <h2 class="subscribe-main-title">Подпишитесь на рассылку</h2>
        <p class="annotation">Только полезная информация и никакого спама, честное бойскаутское!</p>
-
        <form class="subscribe-form subscribe-form-background" action="https://echo.htmlacademy.ru/" method="post">
          <input class="subscribe-field" placeholder="Ваш email" type="email" name="email" id="subscribe-email" required>
          <button class="button" type="submit">Подписаться</button>
        </form>
-
       </div>
    </section>
-
    <footer class="page-footer">
     <h2 class="visually-hidden">Как с нами связаться</h2>
     <section class="footer-social">
@@ -300,20 +283,17 @@
         </li>
       </ul>
     </section>
-
     <section class="footer-contacts">
       <h3 class="visually-hidden">Телефон компании</h3>
-      <p class="contacts-phone">+7 (812) 812-12-12</p>
+      <a class="contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
     </section>
-
     <section class="footer-logo">
       <h3 class="visually-hidden">Сайт компании</h3>
       <a class="footer-logo-link" href="https://htmlacademy.ru">
         <img class="footer-logo-img" alt="Логотип HTML Академии" src="#">
       </a>
-      </section>
-
+    </section>
   </footer>
-
     </main>
   </body>
+  </html>
