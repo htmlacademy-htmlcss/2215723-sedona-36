@@ -96,9 +96,33 @@ body {
   background-color: #82B3D3;
 }
 
+
+
+.advantages-item-square,
+.advantages-item-tourists {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
+
+}
+
+.advantages-item-road {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .advantages-subtitle {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-description-dark {
+  color: #333333;
+
 }
