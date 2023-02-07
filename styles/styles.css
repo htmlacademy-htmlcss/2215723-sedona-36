@@ -126,3 +126,25 @@ body {
   color: #333333;
 
 }
+
+/*SERVICES*/
+.service-list {
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.service-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.service-item-food {
+  background-color: #ffffff;
+}
+
+.service-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: none;
+}
