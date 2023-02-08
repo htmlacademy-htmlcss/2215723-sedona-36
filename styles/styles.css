@@ -45,7 +45,7 @@ body {
   width: 1200px;
 }
 
-.h2-main {
+.section-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -53,7 +53,7 @@ body {
   text-transform: uppercase;
 }
 
-.h2-annotation {
+.annotation {
   color: #333333;
   text-align: center;
 }
@@ -177,4 +177,60 @@ body {
   text-transform: none;
 }
 
-/*
+/*HOTEL-SEARCH*/
+.button-search-hotel {
+  font-size: 20px;
+  line-height: 36px;
+  width: 376px;
+  height: 52px;
+  background-color: #756157;
+
+}
+
+/*SUBSCRIBE*/
+.button-subscribe {
+  font-size: 20px;
+  line-height: 36px;
+  width: 232px;
+  height: 52px;
+}
+
+.subscribe-background {
+  color: #ffffff;
+  background-color: #3F5E72;
+  background-image: url("../images/index/subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 415px;
+
+}
+
+.subscribe-background-annotation {
+  color: #ffffff;
+}
+
+/*FOOTER*/
+.contacts-phone {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*CATALOG*/
+
+/*INNER_HEADER*/
+.filter-wrapper {
+  color: #ffffff;
+  background-color: #3F5E72;
+  background-image: url("../images/catalog/filter-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+}
