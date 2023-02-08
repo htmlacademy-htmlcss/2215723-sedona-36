@@ -227,10 +227,93 @@ body {
   color: #ffffff;
   background-color: #3F5E72;
   background-image: url("../images/catalog/filter-background.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+}
 
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/*FILTER*/
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-reset {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/*Filter-results*/
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #E5E5E5;
+  width: 292px;
+}
+
+/*CATALOG*/
+.catalog-list {
+  list-style-type: none;
+
+}
+
+.catalog-link {
+  text-decoration: none;
+
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.p-apartment {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.button-apartment-detail {
+  background-color: #756157;
+  display: block;
+}
+
+.button-apartment-rating {
+  color: #333333;
+  background-color: #F2F2F2;
+  font-weight: 400;
+
+}
+
+.button-apartment-selected {
+  background-color: #7DB54F;
 }
