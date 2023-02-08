@@ -317,3 +317,35 @@ body {
 .button-apartment-selected {
   background-color: #7DB54F;
 }
+
+/*PAGINATION*/
+.pagination {
+  list-style-type: none;
+}
+
+.pagination-item {
+  background-color: #82B3D3;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.pagination-current,
+.pagination-next-link {
+  color: #000000;
+
+}
+
+.pagination-item-current {
+  background-color: #F2F2F2;
+}
+
+.pagination-item-next {
+
+  background-color: transparent;
+}
