@@ -35,11 +35,14 @@ body {
   color: #000000;
   background-color: #F2F2F2;
 
+
 }
 
 .wrapper {
   color: #000000;
   background-color: #ffffff;
+  margin: o auto;
+  width: 1200px;
 }
 
 .h2-main {
@@ -53,6 +56,24 @@ body {
 .h2-annotation {
   color: #333333;
   text-align: center;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px, 50px, 8px, 50px;
+  width: 140px;
+  height: 36px;
+
 }
 
 /*HEADER*/
@@ -82,13 +103,14 @@ body {
   background-image: url("../images/index/hero-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  width: 1200px;
+  background-position: center;
 }
 
 /*ADVANTAGES*/
 .advantages-list {
   text-align: center;
   list-style-type: none;
+
 }
 
 .advantages-item {
