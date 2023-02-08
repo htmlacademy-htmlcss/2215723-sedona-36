@@ -95,6 +95,12 @@ body {
   text-transform: capitalize;
 }
 
+.button-header {
+  background-color: #756157;
+  width: 160px;
+  height: 36px;
+}
+
 
 /*HERO*/
 .hero {
@@ -170,3 +176,5 @@ body {
   color: #333333;
   text-transform: none;
 }
+
+/*
