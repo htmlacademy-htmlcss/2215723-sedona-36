@@ -27,22 +27,30 @@
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
   background-color: #F2F2F2;
-
-
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
   color: #000000;
   background-color: #ffffff;
-  margin: o auto;
-  width: 1200px;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -64,7 +72,6 @@ body {
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  align-items: center;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
@@ -73,7 +80,6 @@ body {
   padding: 8px, 50px, 8px, 50px;
   width: 140px;
   height: 36px;
-
 }
 
 /*HEADER*/
@@ -101,7 +107,6 @@ body {
   height: 36px;
 }
 
-
 /*HERO*/
 .hero {
   color: #ffffff;
@@ -116,7 +121,6 @@ body {
 .advantages-list {
   text-align: center;
   list-style-type: none;
-
 }
 
 .advantages-item {
@@ -130,7 +134,6 @@ body {
 .advantages-item-tourists {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
-
 }
 
 .advantages-item-road {
@@ -152,7 +155,6 @@ body {
 
 .advantages-description-dark {
   color: #333333;
-
 }
 
 /*SERVICES*/
@@ -182,9 +184,8 @@ body {
   font-size: 20px;
   line-height: 36px;
   width: 376px;
-  height: 52px;
+  min-height: 52px;
   background-color: #756157;
-
 }
 
 /*SUBSCRIBE*/
@@ -203,7 +204,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 415px;
-
 }
 
 .subscribe-background-annotation {
@@ -230,7 +230,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 
 .inner-header-title {
@@ -241,7 +240,6 @@ body {
 
 .breadcrumbs {
   list-style-type: none;
-
 }
 
 .breadcrumbs-link {
@@ -255,7 +253,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-
 }
 
 .catalog-filter-item {
@@ -281,12 +278,10 @@ body {
 /*CATALOG*/
 .catalog-list {
   list-style-type: none;
-
 }
 
 .catalog-link {
   text-decoration: none;
-
 }
 
 .catalog-title {
@@ -311,7 +306,6 @@ body {
   color: #333333;
   background-color: #F2F2F2;
   font-weight: 400;
-
 }
 
 .button-apartment-selected {
@@ -338,7 +332,6 @@ body {
 .pagination-current,
 .pagination-next-link {
   color: #000000;
-
 }
 
 .pagination-item-current {
@@ -346,6 +339,5 @@ body {
 }
 
 .pagination-item-next {
-
   background-color: transparent;
 }
