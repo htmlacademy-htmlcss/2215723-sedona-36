@@ -33,14 +33,13 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
   background-color: #F2F2F2;
+  height: 100%;
 }
 
 .wrapper {
@@ -51,6 +50,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .section-title {
@@ -79,7 +79,7 @@ body {
   border-radius: 4px;
   padding: 8px, 50px, 8px, 50px;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
 }
 
 /*HEADER*/
@@ -107,14 +107,22 @@ body {
   height: 36px;
 }
 
+/*MAIN*/
+main-index {
+  flex-grow: 1;
+}
+
 /*HERO*/
 .hero {
   color: #ffffff;
   background-color: #3F5E72;
-  background-image: url("../images/index/hero-background.jpg");
+  background-image: url("../images/index/background-hero-divider.svg"), url("../images/index/hero-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom, top;
+  display: block;
+  text-align: center;
+  padding: 51px 371px 82px 371px;
 }
 
 /*ADVANTAGES*/
