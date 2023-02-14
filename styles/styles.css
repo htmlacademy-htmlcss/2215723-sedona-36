@@ -215,12 +215,17 @@ body {
 }
 
 .service-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
   text-align: center;
   list-style-type: none;
   text-transform: uppercase;
 }
 
 .service-item {
+  width: 400px;
+  min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
