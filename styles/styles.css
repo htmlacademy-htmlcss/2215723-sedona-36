@@ -305,6 +305,40 @@ body {
 }
 
 /*FOOTER*/
+.page-footer {
+  padding: 40px 70px 30px;
+}
+
+.page-footer-container {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-social {
+  width: 180px;
+}
+
+.footer-social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  list-style-type: none;
+}
+
+.footer-contacts {
+  width: 720px;
+  min-height: 50px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-left: auto;
+}
+
 .contacts-phone {
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
@@ -314,7 +348,7 @@ body {
   text-transform: uppercase;
 }
 
-/*CATALOG*/
+/*CATALOG-PAGE*/
 
 /*INNER_HEADER*/
 .filter-wrapper {
