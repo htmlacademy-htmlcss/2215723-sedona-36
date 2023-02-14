@@ -108,18 +108,15 @@ body {
 }
 
 /*MAIN*/
-main-index {
+.main-index {
   flex-grow: 1;
 }
 
 /*HERO*/
 .hero {
   color: #ffffff;
-  background-color: #3F5E72;
-  background-image: url("../images/index/background-hero-divider.svg"), url("../images/index/hero-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: bottom, top;
+  background: url("../images/index/background-hero-divider.svg") bottom/100% auto no-repeat,
+    #3F5E72 url("../images/index/hero-background.jpg") top/100% auto no-repeat;
   display: block;
   text-align: center;
   padding: 51px 371px 82px 371px;
@@ -206,11 +203,7 @@ main-index {
 
 .subscribe-background {
   color: #ffffff;
-  background-color: #3F5E72;
-  background-image: url("../images/index/subscribe-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #3F5E72 url("../images/index/subscribe-background.jpg") center/100% auto no-repeat;
   min-height: 415px;
 }
 
@@ -233,11 +226,7 @@ main-index {
 /*INNER_HEADER*/
 .filter-wrapper {
   color: #ffffff;
-  background-color: #3F5E72;
-  background-image: url("../images/catalog/filter-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #3F5E72 url("../images/catalog/filter-background.jpg") center/cover no-repeat;
 }
 
 .inner-header-title {
