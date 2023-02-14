@@ -59,6 +59,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  padding: 0;
 }
 
 .annotation {
@@ -235,15 +236,37 @@ body {
 }
 
 /*HOTEL-SEARCH*/
+.hotel-search {
+  padding: 96px 304px;
+}
+
+.hotel-search-container {
+  width: 592px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hotel-search-title {
+  margin: 0 148px 20px 148px;
+}
+
+.hotel-search-container p {
+  margin: 0;
+  margin-bottom: 56px;
+}
+
 .button-search-hotel {
   font-size: 20px;
   line-height: 36px;
   width: 376px;
   min-height: 52px;
   background-color: #756157;
+  margin: 0 108px;
 }
 
 /*SUBSCRIBE*/
+.subscribe {}
+
 .button-subscribe {
   font-size: 20px;
   line-height: 36px;
