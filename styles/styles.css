@@ -59,11 +59,14 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .annotation {
   color: #333333;
   text-align: center;
+  padding: 0;
 }
 
 .button {
@@ -101,6 +104,7 @@ body {
 .header-navigation-user {
   max-width: 350px;
   margin-left: auto;
+  margin-right: 70px;
 }
 
 .header-logo-link {
@@ -128,6 +132,8 @@ body {
 /*MAIN*/
 .main-index {
   flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /*HERO*/
@@ -135,12 +141,27 @@ body {
   color: #ffffff;
   background: url("../images/index/background-hero-divider.svg") bottom/100% auto no-repeat,
     #3F5E72 url("../images/index/hero-background.jpg") top/100% auto no-repeat;
-  display: block;
-  text-align: center;
+  /*display: block;
+  text-align: center;*/
   padding: 51px 371px 82px 371px;
 }
 
 /*ADVANTAGES*/
+.advantages-title-annotation {
+  margin: 0;
+  padding: 69px 0;
+}
+
+.advantages-title {
+  width: 620px;
+  margin: 0 290px 25px 290px;
+}
+
+.advantages-title-annotation p {
+  width: 651px;
+  margin: 0 275px;
+}
+
 .advantages-list {
   text-align: center;
   list-style-type: none;
@@ -150,8 +171,6 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
 }
-
-
 
 .advantages-item-square,
 .advantages-item-tourists {
