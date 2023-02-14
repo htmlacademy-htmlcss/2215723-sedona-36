@@ -89,7 +89,7 @@ body {
 
 .header-logo-link {
   width: 140px;
-  height: 70px;
+  min-height: 70px;
 }
 
 .header-navigation-link {
@@ -104,7 +104,7 @@ body {
 .button-header {
   background-color: #756157;
   width: 160px;
-  height: 36px;
+  min-height: 36px;
 }
 
 /*MAIN*/
@@ -198,7 +198,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   width: 232px;
-  height: 52px;
+  min-height: 52px;
 }
 
 .subscribe-background {
@@ -316,7 +316,7 @@ body {
 
 .pagination-item {
   background-color: #82B3D3;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   text-align: center;
 }
