@@ -265,7 +265,23 @@ body {
 }
 
 /*SUBSCRIBE*/
-.subscribe {}
+.subscribe {
+  padding: 96px 258px 104px;
+}
+
+.subscribe-main {
+  width: 684px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subscribe-main-title {
+  margin: 0 140px 20px;
+}
+
+.subscribe-main p {
+  margin: 0 105px 54px;
+}
 
 .button-subscribe {
   font-size: 20px;
@@ -276,8 +292,7 @@ body {
 
 .subscribe-background {
   color: #ffffff;
-  background: #3F5E72 url("../images/index/subscribe-background.jpg") center/100% auto no-repeat;
-  min-height: 415px;
+  background: #3F5E72 url("../images/index/subscribe-background.jpg") center/cover no-repeat;
 }
 
 .subscribe-background-annotation {
