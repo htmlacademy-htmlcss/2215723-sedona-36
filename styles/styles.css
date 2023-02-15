@@ -181,6 +181,11 @@ body {
   flex-wrap: nowrap;
 }
 
+.big-item-text {
+  width: 230px;
+  padding: 101px 85px;
+}
+
 .advantages-item-square,
 .advantages-item-tourists {
   color: #000000;
