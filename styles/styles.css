@@ -163,22 +163,39 @@ body {
 .advantages-list {
   text-align: center;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-item {
   color: #ffffff;
   background-color: #82B3D3;
+  width: 1200px;
+  min-height: 385px;
+}
+
+.advantages-big-item {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .advantages-item-square,
 .advantages-item-tourists {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  padding: 102px 85px;
+  box-sizing: border-box;
 }
 
 .advantages-item-road {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  padding: 102px 85px;
+  box-sizing: border-box;
 }
 
 .advantages-subtitle {
