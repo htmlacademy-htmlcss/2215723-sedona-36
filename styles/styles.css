@@ -125,7 +125,6 @@ body {
 .button-header {
   background-color: #756157;
   width: 160px;
-  min-height: 36px;
 }
 
 /*MAIN*/
@@ -221,6 +220,13 @@ body {
   text-align: center;
   list-style-type: none;
   text-transform: uppercase;
+}
+
+.service-item-container {
+  width: 230px;
+  margin: 81px 85px;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-item {
@@ -357,6 +363,7 @@ body {
 }
 
 .inner-header-title {
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
