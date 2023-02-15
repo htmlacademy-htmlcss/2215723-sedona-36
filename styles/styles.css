@@ -382,6 +382,12 @@ body {
 .filter-wrapper {
   color: #ffffff;
   background: #3F5E72 url("../images/catalog/filter-background.jpg") center/cover no-repeat;
+  width: 1060px;
+  padding: 35px 70px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 .inner-header-title {
@@ -393,6 +399,10 @@ body {
 
 .breadcrumbs {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -401,6 +411,23 @@ body {
 }
 
 /*FILTER*/
+.catalog-filter {
+  width: 1060px;
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-filter-left {
+  margin-right: auto;
+  display: flex;
+}
+
+.catalog-filter-right {
+  width: 550px;
+  margin-left: auto;
+  display: flex;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
