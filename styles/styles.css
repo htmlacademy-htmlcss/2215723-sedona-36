@@ -454,6 +454,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .filter-results-head {
@@ -479,6 +481,19 @@ body {
 /*CATALOG*/
 .catalog-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.catalog-item {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-link {
@@ -514,8 +529,15 @@ body {
 }
 
 /*PAGINATION*/
+.pagination-frame {
+  width: 1060px;
+}
+
 .pagination {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .pagination-item {
