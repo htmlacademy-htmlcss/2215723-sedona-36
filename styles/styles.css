@@ -91,6 +91,7 @@ body {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .header-navigation-list {
@@ -98,6 +99,7 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   width: 465px;
 }
 
@@ -106,6 +108,7 @@ body {
   margin-left: auto;
   margin-right: 70px;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .header-logo-link {
@@ -116,6 +119,8 @@ body {
 }
 
 .header-navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
@@ -124,9 +129,19 @@ body {
   text-transform: capitalize;
 }
 
+.header-navigation-user .header-navigation-link {
+  min-width: 44px;
+  min-height: 64px;
+  padding: 22px 12px;
+  box-sizing: border-box;
+}
+
 .button-header {
   background-color: #756157;
   width: 160px;
+  margin: 14px 0 14px 20px;
+  padding: 8px 34px;
+  border: 0;
 }
 
 /*MAIN*/
@@ -141,8 +156,8 @@ body {
   color: #ffffff;
   background: url("../images/index/background-hero-divider.svg") bottom/100% auto no-repeat,
     #3F5E72 url("../images/index/hero-background.jpg") top/100% auto no-repeat;
-  /*display: block;
-  text-align: center;*/
+  display: block;
+  text-align: center;
   padding: 51px 371px 82px 371px;
 }
 
@@ -150,6 +165,8 @@ body {
 .advantages-title-annotation {
   margin: 0;
   padding: 69px 0;
+  margin-bottom: 18px;
+  /*добавлен марджин по Пиксель Перфекту*/
 }
 
 .advantages-title {
@@ -183,29 +200,43 @@ body {
   flex-wrap: nowrap;
 }
 
+.advantages-big-item-reverse {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+
 .advantages-image {
   height: 100%;
 }
 
 .big-item-text {
-  width: 230px;
-  padding: 101px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 102px 85px;
 }
 
 .advantages-item-square,
 .advantages-item-tourists {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  padding: 102px 85px;
+  padding: 112px 85px;
   box-sizing: border-box;
 }
 
 .advantages-item-road {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
-  padding: 102px 85px;
+  padding: 112px 85px;
   box-sizing: border-box;
 }
 
@@ -214,11 +245,14 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 62px;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .advantages-description-dark {
