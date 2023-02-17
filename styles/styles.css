@@ -158,7 +158,8 @@ body {
     #3F5E72 url("../images/index/hero-background.jpg") top/100% auto no-repeat;
   display: block;
   text-align: center;
-  padding: 51px 371px 82px 371px;
+  padding: 51px 371px 80px 371px;
+  /*82px поменяла на 80px для PP*/
 }
 
 /*ADVANTAGES*/
@@ -267,12 +268,12 @@ body {
 
 .service-title {
   width: 505px;
-  margin: 0 348px 20px 348px;
+  margin: 0 375px 20px 375px;
 }
 
 .service-title-annotation p {
   width: 490px;
-  margin: 0 355px;
+  margin: 0 382px;
 }
 
 .service-list {
@@ -285,17 +286,36 @@ body {
   text-transform: uppercase;
 }
 
+/* Лишний, перенесла в li
 .service-item-container {
   width: 230px;
   margin: 81px 85px;
   display: flex;
   flex-direction: column;
 }
+*/
 
 .service-item {
   width: 400px;
   min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 81px 85px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-image {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 30px;
+}
+
+.service-subtitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .service-item-food {
@@ -303,6 +323,8 @@ body {
 }
 
 .service-description {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
