@@ -171,12 +171,12 @@ body {
 }
 
 .advantages-title {
-  width: 620px;
+  width: 627px;
   margin: 0 290px 25px 290px;
 }
 
 .advantages-title-annotation p {
-  width: 651px;
+  width: 655px;
   margin: 0 275px;
 }
 
@@ -372,6 +372,7 @@ body {
 }
 
 .subscribe-main-title {
+  width: 406px;
   margin: 0 140px 20px;
 }
 
@@ -414,20 +415,23 @@ body {
 
 .footer-social-list {
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
+  margin: 5px auto 5px 0;
   padding: 0;
   margin-right: auto;
   list-style-type: none;
 }
 
+.footer-social-item {
+  min-width: 48px;
+  height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
 .footer-contacts {
   width: 720px;
   min-height: 50px;
-}
-
-.footer-logo {
-  width: 120px;
-  margin-left: auto;
 }
 
 .contacts-phone {
@@ -437,7 +441,25 @@ body {
   line-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
+  display: block;
+  margin: 5px 194px 5px 198px;
+  width: 333px;
+  height: 40px;
+  left: 195px;
+  top: 5px;
 }
+
+.footer-logo {
+  width: 120px;
+  margin-left: auto;
+}
+
+.footer-logo-link {
+  display: block;
+  padding: 9px 0 9px 4px;
+}
+
+
 
 /*CATALOG-PAGE*/
 
