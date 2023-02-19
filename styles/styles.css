@@ -80,7 +80,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 8px, 50px, 8px, 50px;
+  padding: 8px 50px 8px 50px;
   min-width: 140px;
   min-height: 36px;
 }
@@ -489,12 +489,52 @@ body {
   display: flex;
 }
 
+.catalog-filter-price-group {
+  display: grid;
+  grid-template-columns: 144px 144px 261px;
+  border: none;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  border: none;
 }
+
+.catalog-filter-title-price {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+input[name="price-min"] {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+input[name="price-max"] {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+input[name="price-range"] {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.catalog-filter-price-group .button {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: end;
+}
+
+.catalog-filter-price-group .button-reset {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  justify-self: end;
+}
+
 
 .catalog-filter-item {
   font-size: 18px;
