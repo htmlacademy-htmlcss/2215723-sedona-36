@@ -81,7 +81,7 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   padding: 8px, 50px, 8px, 50px;
-  width: 140px;
+  min-width: 140px;
   min-height: 36px;
 }
 
@@ -113,10 +113,8 @@ body {
 
 .header-logo-link {
   width: 140px;
-  margin-left: 70px;
-  margin-right: 30px;
+  margin: 0 70px -16px 30px;
   position: relative;
-  margin-bottom: -16px;
 }
 
 .header-navigation-link {
@@ -159,16 +157,14 @@ body {
     #3F5E72 url("../images/index/hero-background.jpg") top/100% auto no-repeat;
   display: block;
   text-align: center;
-  padding: 51px 371px 80px 371px;
-  /*82px поменяла на 80px для PP*/
+  padding: 51px 371px 77px 371px;
+  /*82px поменяла на 77px для PP*/
 }
 
 /*ADVANTAGES*/
 .advantages-title-annotation {
-  margin: 0;
+  margin: 0 0 18px;
   padding: 69px 0;
-  margin-bottom: 18px;
-  /*добавлен марджин по Пиксель Перфекту*/
 }
 
 .advantages-title {
@@ -200,12 +196,6 @@ body {
 .advantages-big-item {
   display: flex;
   flex-wrap: nowrap;
-}
-
-.advantages-big-item-reverse {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row-reverse;
 }
 
 .advantages-image {
@@ -247,8 +237,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 62px;
+  margin: 0 0 62px;
 }
 
 .advantages-description {
@@ -314,9 +303,8 @@ body {
 }
 
 .service-subtitle {
-  margin: 0;
+  margin: 0 0 30px;
   padding: 0;
-  margin-bottom: 30px;
 }
 
 .service-item-food {
@@ -348,8 +336,7 @@ body {
 }
 
 .hotel-search-container p {
-  margin: 0;
-  margin-bottom: 56px;
+  margin: 0 0 56px;
 }
 
 .button-search-hotel {
