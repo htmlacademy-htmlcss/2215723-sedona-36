@@ -130,6 +130,7 @@ body {
 
 .header-navigation-user .header-navigation-link {
   min-width: 44px;
+  max-width: 70px;
   min-height: 64px;
   padding: 22px 12px;
   box-sizing: border-box;
@@ -275,15 +276,6 @@ body {
   list-style-type: none;
   text-transform: uppercase;
 }
-
-/* Лишний, перенесла в li
-.service-item-container {
-  width: 230px;
-  margin: 81px 85px;
-  display: flex;
-  flex-direction: column;
-}
-*/
 
 .service-item {
   width: 400px;
@@ -433,8 +425,6 @@ body {
   margin: 5px 194px 5px 198px;
   width: 333px;
   height: 40px;
-  left: 195px;
-  top: 5px;
 }
 
 .footer-logo {
@@ -447,10 +437,7 @@ body {
   padding: 9px 0 9px 4px;
 }
 
-
-
 /*CATALOG-PAGE*/
-
 /*INNER_HEADER*/
 .filter-wrapper {
   color: #ffffff;
@@ -477,7 +464,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 .breadcrumbs-link {
   font-size: 16px;
