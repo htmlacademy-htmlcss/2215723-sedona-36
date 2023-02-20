@@ -12,8 +12,7 @@
       <header class="header-main">
         <nav class="header-navigation">
           <a class="header-logo-link" href="index.html">
-            <img class="header-logo" width="140" height="70" src="images/header/logo-sedona.svg"
-              alt="Логотип города Седона.">
+            <img class="header-logo" width="140" height="70" src="images/header/logo.png" alt="Логотип города Седона.">
           </a>
           <ul class="header-navigation-list">
             <li class="header-navigation-item">
@@ -105,15 +104,11 @@
                 </fieldset>
               </div>
               <div class="catalog-filter-right">
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <fieldset class="catalog-filter-group catalog-filter-price-group">
+                  <legend class="catalog-filter-title catalog-filter-title-price">Стоимость, ₽:</legend>
                   <input type="number" name="price-min" min="0" max="11000" value="0" placeholder="от">
-                  <input type="number" name="price-min" min="0" max="11000" value="9000" placeholder="до">
+                  <input type="number" name="price-max" min="0" max="11000" value="9000" placeholder="до">
                   <input type="range" name="price-range" min="0" max="11000" value="9000">
-                  <!-- вернуться после лайва -->
-                </fieldset>
-                <fieldset class="catalog-filter-group">
-                  <legend class="visually-hidden">Настройки выбора</legend>
                   <button class="button" type="submit">Применить</button>
                   <button class="button button-reset" type="reset">Сбросить</button>
                 </fieldset>
@@ -157,84 +152,58 @@
               <li class="catalog-item">
                 <a class="catalog-link" href="#">
                   <img class="catalog-item-image" width="300" height="212" src="images/catalog/hotels/hotel-1.jpg"
-                    alt="Звездное небо из пещеры.">
+                    alt="Звездное небо из пещеры."></a>
+                <a class="catalog-link-title" href="#">
                   <h3 class="catalog-title">Amara Resort & Spa</h3>
                 </a>
-                <p class="p-apartment">
-                  <span class="type-apartament">Гостиница</span>
-                  <span class="apartment-price">От 4000 ₽</span>
-                </p>
-                <div class="apartment-button">
-                  <a class="button button-apartment-detail" href="#">Подробнее</a>
-                  <button class="button" type="button">В избранное</button>
-                </div>
-                <div class="apartment-rating">
-                  <button class="button button-apartment-rating" type="button">Рейтинг: <span
-                      class="number-rating">8,5</span></button>
-                  <!-- <p class="stars star-5">
-  <span class="visually-hidden">5 звёзд</span>
-</p> -->
-                </div>
+                <span class="p-apartment type-apartament">Гостиница</span>
+                <span class="p-apartment apartment-price">От 4000 ₽</span>
+                <a class="button button-apartment-detail" href="#">Подробнее</a>
+                <button class="button apartment-button" type="button">В избранное</button>
+                <p class="stars star-"><span class="visually-hidden">4 звезды</span></p>
+                <button class="button button-apartment-rating" type="button">Рейтинг: 8,5</button>
               </li>
               <li class="catalog-item">
                 <a class="catalog-link" href="#">
                   <img class="catalog-item-image" width="300" height="212" src="images/catalog/hotels/hotel-2.jpg"
-                    alt="Кафедральная гора Седоны.">
+                    alt="Кафедральная гора Седоны."></a>
+                <a class="catalog-link-title" href="#">
                   <h3 class="catalog-title">Villas at Poco Diablo</h3>
                 </a>
-                <p class="p-apartment">
-                  <span class="type-apartament">Гостиница</span>
-                  <span class="apartment-price">От 5000 ₽</span>
-                </p>
-                <div class="apartment-button">
-                  <a class="button button-apartment-detail" href="#">Подробнее</a>
-                  <button class="button button-apartment-selected" type="button">В избранном</button>
-                </div>
-                <div class="apartment-rating">
-                  <button class="button button-apartment-rating" type="button">Рейтинг: <span
-                      class="number-rating">9,2</span></button>
-                  <!-- вернуться после лайва -->
-                </div>
+                <span class="p-apartment type-apartament">Гостиница</span>
+                <span class="p-apartment apartment-price">От 5000 ₽</span>
+                <a class="button button-apartment-detail" href="#">Подробнее</a>
+                <button class="button button-apartment-selected" type="button">В избранном</button>
+                <p class="stars star-4"><span class="visually-hidden">4 звезды</span></p>
+                <button class="button button-apartment-rating" type="button">Рейтинг: 9,2</button>
               </li>
               <li class="catalog-item">
                 <a class="catalog-link" href="#">
                   <img class="catalog-item-image" width="300" height="212" src="images/catalog/hotels/hotel-3.jpg"
-                    alt="Пейзаж Аризоны.">
+                    alt="Пейзаж Аризоны."></a>
+                <a class="catalog-link-title" href="#">
                   <h3 class="catalog-title">Desert Quail Inn</h3>
                 </a>
-                <p class="p-apartment">
-                  <span class="type-apartament">Гостиница</span>
-                  <span class="apartment-price">От 2500 ₽</span>
-                </p>
-                <div class="apartment-button">
-                  <a class="button button-apartment-detail" href="#">Подробнее</a>
-                  <button class="button" type="button">В избранное</button>
-                </div>
-                <div class="apartment-rating">
-                  <button class="button button-apartment-rating" type="button">Рейтинг: <span class="number-rating">6,9
-                    </span></button>
-                  <!-- вернуться после лайва -->
-                </div>
+                <span class="p-apartment type-apartament">Гостиница</span>
+                <span class="p-apartment apartment-price">От 2500 ₽</span>
+                <a class="button button-apartment-detail" href="#">Подробнее</a>
+                <button class="button apartment-button" type="button">В избранное</button>
+                <p class="stars star-3"><span class="visually-hidden">3 звезды</span></p>
+                <button class="button button-apartment-rating" type="button">Рейтинг: 6,9</button>
               </li>
               <li class="catalog-item">
                 <a class="catalog-link" href="#">
                   <img class="catalog-item-image" width="300" height="212" src="images/catalog/hotels/hotel-4.jpg"
-                    alt="Ночные красные скалы.">
+                    alt="Ночные красные скалы."></a>
+                <a class="catalog-link-title" href="#">
                   <h3 class="catalog-title">GreenTree Inn</h3>
                 </a>
-                <p class="p-apartment">
-                  <span class="type-apartament">Гостиница</span>
-                  <span class="apartment-price">От 1500 ₽</span>
-                </p>
-                <div class="apartment-button">
-                  <a class="button button-apartment-detail" href="#">Подробнее</a>
-                  <button class="button" type="button">В избранное</button>
-                </div>
-                <div class="apartment-rating">
-                  <button class="button button-apartment-rating" type="button">Рейтинг: <span class="number-rating">5,0
-                    </span></button>
-                  <!-- вернуться после лайва -->
-                </div>
+                <span class="p-apartment type-apartament">Гостиница</span>
+                <span class="p-apartment apartment-price">От 1500 ₽</span>
+                <a class="button button-apartment-detail" href="#">Подробнее</a>
+                <button class="button apartment-button" type="button">В избранное</button>
+                <p class="stars star-2"><span class="visually-hidden">2 звезды</span></p>
+                <button class="button button-apartment-rating" type="button">Рейтинг: 5,0</button>
               </li>
             </ol>
           </div>
