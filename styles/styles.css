@@ -270,6 +270,21 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0 0 62px;
+  position: relative;
+}
+
+.advantages-subtitle::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60px;
+  top: 86px;
+  right: 85px;
+}
+
+.advantages-subtitle-dark::after {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-description {
