@@ -663,7 +663,22 @@ input[name="price-range"] {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 12px 40px 12px 20px;
-  background: url("../images/catalog/price-tick.svg") no-repeat right 20px center;
+  background: #ffffff url("../images/catalog/price-tick.svg") no-repeat right 20px center;
+}
+
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus {
+  border-color: #3F5E72;
+  outline: none;
+}
+
+.select-control:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
+  cursor: default;
 }
 
 /*CATALOG*/
