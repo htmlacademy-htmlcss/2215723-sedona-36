@@ -654,11 +654,16 @@ input[name="price-range"] {
 }
 
 .select-control {
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #E5E5E5;
   width: 292px;
+  appearance: none;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 12px 40px 12px 20px;
+  background: url("../images/catalog/price-tick.svg") no-repeat right 20px center;
 }
 
 /*CATALOG*/
