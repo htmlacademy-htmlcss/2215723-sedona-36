@@ -382,9 +382,7 @@ body {
   background: url("../images/index/service/service-home.svg") no-repeat;
   width: 75px;
   height: 72px;
-  position: relative;
-  left: 77px;
-  bottom: 30px;
+  margin: 0 77px 30px;
 }
 
 .service-subtitle-food::before {
@@ -652,8 +650,6 @@ input[name="price-range"] {
   width: 191px;
 }
 
-
-
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
@@ -666,11 +662,13 @@ input[name="price-range"] {
 
 .button-reset:hover {
   opacity: 0.6;
+  background-color: transparent;
 }
 
 .button-reset:focus {
-  border-color: #83B3D3;
   outline: none;
+  border: 3px solid #83B3D3;
+  background-color: transparent;
 }
 
 .button-reset:active {
@@ -806,7 +804,19 @@ input[name="price-range"] {
   align-self: flex-start;
 }
 
-.apartment-button {
+.button-apartment-detail:hover {
+  background: #615048;
+}
+
+.button-apartment-detail:focus {
+  background: #615048;
+}
+
+.button-apartment-detail:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-apartment-for-select {
   grid-area: 4/2/5/3;
   padding: 8px;
   justify-self: end;
