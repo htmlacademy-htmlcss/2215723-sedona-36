@@ -565,6 +565,18 @@ a[href^="tel:"] {
   height: 40px;
 }
 
+a[href^="tel:"]:hover {
+  color: #756157;
+}
+
+a[href^="tel:"]:focus {
+  color: #756157;
+}
+
+a[href^="tel:"]:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-logo {
   width: 120px;
   margin-left: auto;
