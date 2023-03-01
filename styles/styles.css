@@ -437,6 +437,18 @@ body {
   margin: 0 108px;
 }
 
+.button-search-hotel:hover {
+  background: #615048;
+}
+
+.button-search-hotel:focus {
+  background: #615048;
+}
+
+.button-search-hotel:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /*SUBSCRIBE*/
 .subscribe {
   padding: 96px 258px 104px;
