@@ -88,6 +88,24 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  background: #68A2CA;
+}
+
+.button:focus {
+  background: #68A2CA;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  color: #FFFFFF;
+  background: #E5E5E5;
+  cursor: default;
+}
+
 /*HEADER*/
 .header-navigation {
   font-weight: 700;
@@ -95,6 +113,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   align-items: center;
+  position: relative;
 }
 
 .header-navigation-list {
@@ -118,13 +137,13 @@ body {
   display: block;
   width: 140px;
   margin: 0 30px -6px 70px;
-  position: relative;
 }
 
 .header-logo {
   display: block;
+  position: absolute;
+  top: 0;
 }
-
 
 .header-navigation-link {
   display: block;
@@ -174,6 +193,18 @@ body {
   margin: 14px 0 14px 20px;
   padding: 8px 34px;
   border: 0;
+}
+
+.button-header:hover {
+  background: #615048;
+}
+
+.button-header:focus {
+  background: #615048;
+}
+
+.button-header:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*MAIN*/
