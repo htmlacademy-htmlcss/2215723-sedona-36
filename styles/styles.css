@@ -639,7 +639,7 @@ input[name="price-range"] {
 .catalog-filter-price-group .button {
   grid-area: 2/3/3/4;
   justify-self: end;
-  padding: 4px 50px;
+  padding: 8px 50px;
   align-self: end;
   border: none;
 }
@@ -647,9 +647,11 @@ input[name="price-range"] {
 .catalog-filter-price-group .button-reset {
   grid-area: 3/3/4/4;
   justify-self: end;
-  padding: 4px 50px;
+  padding: 8px 50px;
   align-self: end;
+  width: 191px;
 }
+
 
 
 .catalog-filter-item {
@@ -660,6 +662,19 @@ input[name="price-range"] {
 .button-reset {
   background-color: transparent;
   border-color: transparent;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Filter-results*/
