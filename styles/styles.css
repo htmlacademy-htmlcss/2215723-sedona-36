@@ -846,6 +846,18 @@ input[name="price-range"] {
   align-self: flex-start;
 }
 
+.button-apartment-selected:hover {
+  background: #6C9E42;
+}
+
+.button-apartment-selected:focus {
+  background: #6C9E42;
+}
+
+.button-apartment-selected:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /*PAGINATION*/
 .pagination-frame {
   width: 1060px;
