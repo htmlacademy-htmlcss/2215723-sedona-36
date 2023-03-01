@@ -531,7 +531,21 @@ body {
   height: 40px;
   padding: 0 10px;
   box-sizing: border-box;
+  color: #83B3D3;
 }
+
+.footer-social-link:hover {
+  color: #68A2CA;
+}
+
+.footer-social-link:focus {
+  color: #68A2CA;
+}
+
+.footer-social-link:active {
+  color: rgba(104, 162, 202, 0.3);
+}
+
 
 .footer-contacts {
   width: 720px;
