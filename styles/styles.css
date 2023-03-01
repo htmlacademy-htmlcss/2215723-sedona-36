@@ -187,6 +187,21 @@ body {
   background-position: center;
 }
 
+.navigation-badge {
+  position: absolute;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50%;
+  left: 20px;
+  top: 11px;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 10px;
+  background-color: #7DB54F;
+  aspect-ratio: 1/1;
+}
+
 .button-header {
   background-color: #756157;
   width: 160px;
@@ -574,14 +589,38 @@ a[href^="tel:"] {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  margin: 0;
+  margin: 8px 0 10px;
   padding: 0;
+  justify-content: start;
+  align-items: center;
+}
+
+.breadcrumbs-item {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  width: 8px;
+  height: 11px;
+  margin: 0 10px;
+  background: url("../images/catalog/breadcrubs-tick.svg") center/cover no-repeat;
 }
 
 .breadcrumbs-link {
+
+  color: inherit;
   font-size: 16px;
   line-height: 21px;
-  margin-right: 10px;
+  text-decoration: none;
+}
+
+.breadcrumbs-link-home {
+  width: 13px;
+  height: 15px;
+  background: url("../images/catalog/breadcrubs-home.svg") center/cover no-repeat;
 }
 
 /*FILTER*/
