@@ -815,18 +815,34 @@ input[name="price-range"] {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
-  gap: 20px;
+  row-gap: 20px;
+}
+
+.catalog-list::after {
+  content: "";
+  display: block;
+  width: 1060px;
+  border: 1px solid #E6E6E6;
+  transform: rotate(180deg);
+  margin-top: 20px;
 }
 
 .catalog-item {
   width: 300px;
-  padding: 20px;
+  padding: 19px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 212px auto min-content min-content min-content;
   row-gap: 16px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-link {
