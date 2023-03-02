@@ -636,31 +636,25 @@ a[href^="tel:"]:active {
 
 .breadcrumbs-item {
   display: flex;
-  width: 20px;
-  height: 20px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
-  width: 8px;
-  height: 11px;
-  margin: 0 10px;
-  background: url("../images/catalog/breadcrubs-tick.svg") center/cover no-repeat;
+  display: block;
+  margin: 5px 10px;
+  background: url("../images/catalog/breadcrubs-tick.svg") no-repeat;
+  width: 7px;
+  height: 10px;
 }
 
 .breadcrumbs-link {
-
   color: inherit;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
 }
 
-.breadcrumbs-link-home {
-  width: 13px;
-  height: 15px;
-  background: url("../images/catalog/breadcrubs-home.svg") center/cover no-repeat;
-}
+
 
 /*FILTER*/
 .catalog-filter {
@@ -901,9 +895,21 @@ input[name="price-range"] {
   align-self: flex-start;
 }
 
-.stars {
+.apartment-category {
   grid-area: 5/1/6/2;
+  justify-self: start;
+  align-self: self-start;
   margin: 0;
+  width: 140px;
+  height: 37px;
+  display: flex;
+}
+
+.star {
+  display: block;
+  margin: 10px 6px 10px 0;
+  width: 19px;
+  height: 18px;
 }
 
 .button-apartment-rating {
