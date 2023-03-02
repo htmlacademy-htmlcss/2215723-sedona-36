@@ -1073,3 +1073,13 @@ input[name="price-range"] {
 .pagination-item-next {
   background-color: transparent;
 }
+
+.header-navigation-item:hover,
+.breadcrumbs-item:hover {
+  opacity: 0.3;
+}
+
+.header-navigation-item:active,
+.breadcrumbs-item:active {
+  opacity: 0.3;
+}
