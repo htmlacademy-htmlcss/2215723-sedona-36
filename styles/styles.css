@@ -775,6 +775,41 @@ input[name="price-range"] {
 .type-button-results-item {
   width: 48px;
   height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.type-button-results-item-selected {
+  border-color: #000000;
+}
+
+.type-button-results-item:hover {
+  border-color: #000000;
+}
+
+.type-button-results-item:focus {
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.type-button-results-item:active {
+  border-color: #000000;
+}
+
+.button-selected {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url("../images/catalog/catalog-view-full.svg") center no-repeat;
+}
+
+.button-selected-list {
+  background-image: url("../images/catalog/catalog-view-list.svg");
+}
+
+.button-selected-icon {
+  background-image: url("../images/catalog/catalog-view-icon.svg");
 }
 
 .type-button-results-item:not(:last-child) {
@@ -792,6 +827,7 @@ input[name="price-range"] {
   border-radius: 4px;
   padding: 12px 40px 12px 20px;
   background: #ffffff url("../images/catalog/price-tick.svg") no-repeat right 20px center;
+  margin: 0 70px 0 190px;
 }
 
 .select-control:hover {
