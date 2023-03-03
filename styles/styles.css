@@ -904,6 +904,18 @@ input[name="price-range"] {
   padding: 0;
 }
 
+.catalog-title:hover {
+  color: #756157;
+}
+
+.catalog-title:focus {
+  color: #756157;
+}
+
+.catalog-title:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .p-apartment {
   font-size: 18px;
   line-height: 21px;
@@ -928,17 +940,7 @@ input[name="price-range"] {
   align-self: flex-start;
 }
 
-.button-apartment-detail:hover {
-  background: #615048;
-}
 
-.button-apartment-detail:focus {
-  background: #615048;
-}
-
-.button-apartment-detail:active {
-  color: rgba(255, 255, 255, 0.3);
-}
 
 .button-apartment-for-select {
   grid-area: 4/2/5/3;
