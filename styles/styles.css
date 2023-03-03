@@ -962,6 +962,7 @@ input[name="price-range"] {
   margin: 10px 6px 10px 0;
   width: 19px;
   height: 18px;
+  background: url("../images/catalog/star.svg");
 }
 
 .button-apartment-rating {
