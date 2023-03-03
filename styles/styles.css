@@ -1066,6 +1066,10 @@ input[name="price-range"] {
   text-decoration: none;
 }
 
+.pagination-current {
+  pointer-events: none;
+}
+
 .pagination-item-current {
   background-color: #F2F2F2;
 }
