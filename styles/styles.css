@@ -667,7 +667,7 @@ a[href^="tel:"]:active {
   display: block;
   margin: 5px 10px;
   background: url("../images/catalog/breadcrubs-tick.svg") no-repeat;
-  width: 7px;
+  width: 9px;
   height: 10px;
 }
 
@@ -684,7 +684,16 @@ a[href^="tel:"]:active {
 .catalog-filter {
   width: 1060px;
   display: flex;
-  flex-direction: row;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .catalog-filter-left {
@@ -696,6 +705,12 @@ a[href^="tel:"]:active {
   width: 550px;
   margin-left: auto;
   display: flex;
+}
+
+.catalog-filter-group {
+  border: none;
+  margin: 0 65px 0 0;
+  padding: 0;
 }
 
 .catalog-filter-price-group {
@@ -711,7 +726,27 @@ a[href^="tel:"]:active {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-  border: none;
+  margin-bottom: 32px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 19px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background: url("../images/catalog/filter-tick.svg") no-repeat center;
 }
 
 .catalog-filter-title-price {
