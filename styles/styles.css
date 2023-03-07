@@ -745,8 +745,12 @@ a[href^="tel:"]:active {
   border-radius: 4px;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark {
-  background: url("../images/catalog/filter-tick.svg") no-repeat center;
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../images/catalog/filter-tick.svg") no-repeat;
 }
 
 .catalog-filter-title-price {
@@ -782,6 +786,7 @@ input[name="price-range"] {
 input[name="price-max"] {
   border-radius: 0 4px 4px 0;
 }
+
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -970,7 +975,7 @@ input[name="price-max"] {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 212px auto min-content min-content min-content;
   row-gap: 16px;
-  border: 1px solid #E6E6E6;
+  outline: 1px solid #E6E6E6;
   border-radius: 4px;
   margin-right: 20px;
 }
