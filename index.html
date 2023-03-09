@@ -205,6 +205,49 @@
       </footer>
 
     </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <button type="button" class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <p class="field-group">
+              <label class="form-label" for="check-in-date">Дата заезда:</label>
+              <input class="form-field date-field" type="text" id="check-in-date" name="check-in-date"
+                value="27 апреля 2020" placeholder="Укажите дату">
+              <span class="modal-message modal-message-error">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="field-group">
+              <label class="form-label" for="check-out-date">Дата выезда:</label>
+              <input class="form-field date-field" type="text" id="check-out-date" name="check-out-date"
+                value="1 сентября 2023" placeholder="Укажите дату">
+              <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="visitor">
+              <p class="field-group">
+                <label class="form-label" for="adults">Взрослые:</label>
+                <button type="button" class="button-plus"></button>
+                <input class="form-field adults-field" type="number" id="adults" name="adults" value="2"
+                  placeholder="0">
+                <button type="button" class="button-plus"></button>
+              </p>
+              <p class="field-group">
+                <label class="form-label" for="child">Дети:</label>
+                <button type="button" class="button-plus"></button>
+                <input class="form-field adults-field" type="number" id="child" name="child" value="2" placeholder="0">
+                <button type="button" class="button-plus"></button>
+              </p>
+            </div>
+
+            <button class="button modal-search-button">Найти</button>
+          </form>
+        </section>
+
+      </div>
+    </div>
   </body>
 
 </html>
