@@ -1404,15 +1404,15 @@ input[name="price-max"] {
   margin: 0;
 }
 
-.form-label-child {
+/*.form-label-child {
   margin: 12px 24px 12px 88px;
   padding-right: 40px;
   /*background: url("/images/index/modal/modal-i.svg") center right 5px no-repeat;*/
-}
+
 
 .tooltip {
   position: absolute;
-  margin-left: -52px;
+  margin-left: -6px;
   width: 26px;
   height: 26px;
 }
@@ -1453,4 +1453,28 @@ input[name="price-max"] {
   transform: translateX(-50%);
   z-index: 1;
   display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.form-label-icon {
+  position: relative;
+  padding-right: 40px;
+  margin: 12px 24px 12px 88px;
+}
+
+.tooltip-text:after {
+  content: '';
+  background-image: url("../images/index/modal/modal-triangle.svg");
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
