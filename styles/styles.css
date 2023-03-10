@@ -70,7 +70,7 @@ body {
 }
 
 .button {
-  display: inline-block;
+  display: block;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -1287,6 +1287,7 @@ input[name="price-max"] {
   top: 64px;
   border-radius: 50%;
   border: none;
+  background: #f2f2f2 url("/images/index/modal/modal-cross.svg") center no-repeat;
 }
 
 .modal-content {
@@ -1309,4 +1310,70 @@ input[name="price-max"] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.field-group {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 577px;
+  justify-content: space-between;
+}
+
+.form-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  margin: 12px 18px 12px 0;
+}
+
+.form-field {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 50px 12px 20px;
+  width: 440px;
+  box-sizing: border-box;
+  font-family: inherit;
+  background: #f2f2f2 url("/images/index/modal/modal-calendar.svg") bottom 50% right 22px no-repeat;
+  border: none;
+}
+
+.modal-message {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 4px 20px 23px 137px;
+  padding: 0 0 0 20px;
+}
+
+.modal-message-error {
+  color: #FF5757;
+}
+
+.form-label-adults {
+  margin-right: 46px;
+}
+
+.button-plus {
+  display: block;
+  font-family: inherit;
+  border: none;
+  min-width: 40px;
+  min-height: 48px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.modal-search-button {
+  width: 577px;
+  min-height: 60px;
+  background: #83B3D3;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 48px;
 }
