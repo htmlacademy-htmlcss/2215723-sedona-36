@@ -122,16 +122,15 @@
           </div>
         </section>
         <section class="subscribe subscribe-background">
-          <div class="subscribe-main">
-            <h2 class="section-title subscribe-main-title">Подпишитесь на рассылку</h2>
-            <p class="annotation subscribe-background-annotation">Только полезная информация и никакого спама,
-              честное бойскаутское!</p>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="subscribe-field" placeholder="Ваш email" type="email" name="email" id="subscribe-email"
-                required>
-              <button class="button button-subscribe" type="submit">Подписаться</button>
-            </form>
-          </div>
+          <h2 class="section-title subscribe-main-title">Подпишитесь на рассылку</h2>
+          <p class="annotation subscribe-background-annotation">Только полезная информация и никакого спама,
+            честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="subscribe-email">Email</label>
+            <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="email" id="subscribe-email"
+              required>
+            <button class="button button-subscribe" type="submit">Подписаться</button>
+          </form>
         </section>
       </main>
       <footer class="page-footer">
@@ -205,6 +204,86 @@
 
       </footer>
 
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <button type="button" class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.49 1.783 13.199.49 7.49 6.198 1.783.491.49 1.783 6.198 7.49.49 13.198l1.293 1.293L7.49 8.783l5.708 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <p class="field-group">
+              <label class="form-label" for="check-in-date">Дата заезда:</label>
+              <input class="form-field date-field" type="text" id="check-in-date" name="check-in-date"
+                value="27 апреля 2020" placeholder="Укажите дату">
+            </p>
+            <p class="modal-message modal-message-error">Мы не можем отправить вас в прошлое.</p>
+            <p class="field-group">
+              <label class="form-label" for="check-out-date">Дата выезда:</label>
+              <input class="form-field date-field" type="text" id="check-out-date" name="check-out-date"
+                value="1 сентября 2023" placeholder="Укажите дату">
+            </p>
+            <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="visitor">
+              <p class="field-group field-group-adults">
+                <label class="form-label form-label-adults" for="adults">Взрослые:</label>
+                <button type="button" class="button-plus">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9v2h14V9H3Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <input class="adults-field" type="number" id="adults" name="adults" value="2" placeholder="0">
+                <button type="button" class="button-plus">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <span class="form-label form-label-icon">
+                  <label class="form-label form-label-child" for="child">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3"></circle>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff">
+                        </path>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <button type="button" class="button-plus">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9v2h14V9H3Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <input class="adults-field" type="number" id="child" name="child" value="2" placeholder="0">
+                <button type="button" class="button-plus">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor" />
+                  </svg>
+                </button>
+              </p>
+            </div>
+
+            <button class="button modal-search-button">Найти</button>
+          </form>
+        </section>
+
+      </div>
     </div>
   </body>
 
