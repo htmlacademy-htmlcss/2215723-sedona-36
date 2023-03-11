@@ -1394,6 +1394,25 @@ input[name="price-max"] {
   font-family: inherit;
   background: #f2f2f2 url("/images/index/modal/modal-calendar.svg") bottom 50% right 22px no-repeat;
   border: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.form-field:not(:placeholder-shown) {
+  color: #000000;
+}
+
+.form-field:hover {
+  background-color: #e6e6e6;
+}
+
+.form-field:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.form-field:focus:not(:placeholder-shown) {
+  color: #000000;
+  outline: 2px solid #000000;
 }
 
 .modal-message {
