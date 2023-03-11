@@ -512,6 +512,24 @@ body {
   background: #f2f2f2;
 }
 
+.subscribe-field:not(:placeholder-shown) {
+  color: #000000;
+}
+
+.subscribe-field:hover {
+  background-color: #e6e6e6;
+}
+
+.subscribe-field:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.subscribe-field:focus:not(:placeholder-shown) {
+  color: #000000;
+  outline: 2px solid #000000;
+}
+
 
 .subscribe-background {
   color: #ffffff;
