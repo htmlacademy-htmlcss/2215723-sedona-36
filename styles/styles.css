@@ -752,6 +752,7 @@ a[href^="tel:"]:active {
   height: 19px;
   background: #FFFFFF;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -812,6 +813,7 @@ a[href^="tel:"]:active {
   margin: 0 2px 0 0;
   padding: 12px 35px 12px 21px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 input[name="price-max"] {
@@ -831,6 +833,19 @@ input[name="price-max"] {
   font-size: 18px;
   line-height: 24px;
   height: 48px;
+}
+
+.range-input:hover {
+  background: #e6e6e6;
+}
+
+.range-input:not(:placeholder-shown):focus {
+  outline: 2px solid #000000;
+}
+
+.range-input:focus-visible {
+  background: #e6e6e6;
+  outline: 3px solid #83B3D3;
 }
 
 .range-field-text span {
@@ -868,6 +883,7 @@ input[name="price-max"] {
   border: none;
   border-radius: 5px;
   top: -8px;
+  cursor: pointer;
 }
 
 .range-toggle:hover {
@@ -1007,6 +1023,7 @@ input[name="price-max"] {
   padding: 12px 40px 12px 20px;
   background: #ffffff url("../images/catalog/price-tick.svg") no-repeat right 15px center;
   margin: 0 70px 0 196px;
+  cursor: pointer;
 }
 
 .select-control:hover {
@@ -1423,6 +1440,10 @@ input[name="price-max"] {
   fill-opacity: 1;
   outline: 3px solid #82B3D3;
   border-radius: 4px;
+}
+
+.button-plus:focus {
+  outline: none;
 }
 
 
