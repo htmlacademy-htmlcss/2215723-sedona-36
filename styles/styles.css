@@ -1310,7 +1310,23 @@ input[name="price-max"] {
   top: 64px;
   border-radius: 50%;
   border: none;
-  background: #f2f2f2 url("/images/index/modal/modal-cross.svg") center no-repeat;
+  color: #000000;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background: #e6e6e6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active svg {
+  background: #e6e6e6;
+  fill-opacity: 0.3;
 }
 
 .modal-content {
