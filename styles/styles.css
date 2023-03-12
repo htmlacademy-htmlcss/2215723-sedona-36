@@ -306,8 +306,7 @@ body {
 }
 
 .advantages-subtitle {
-  position: relative;
-  margin: 0 0 62px;
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -316,11 +315,10 @@ body {
 
 .advantages-subtitle::after {
   content: "";
-  position: absolute;
-  top: 86px;
-  right: 85px;
+  display: block;
   width: 60px;
   height: 2px;
+  margin: 30px auto;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
