@@ -23,7 +23,7 @@
               <a class="header-navigation-link" href="#">О Седоне</a>
             </li>
             <li class="header-navigation-item">
-              <a class="header-navigation-link header-navigation-link-current" href="catalog.html">Гостиницы</a>
+              <a class="header-navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="header-navigation-list header-navigation-user">
@@ -122,8 +122,8 @@
                 </fieldset>
               </div>
               <div class="catalog-filter-right">
-                <fieldset class="catalog-filter-group catalog-filter-price-group">
-                  <legend class="catalog-filter-title catalog-filter-title-price">Стоимость, ₽:</legend>
+                <fieldset class="catalog-filter-group filter-group-price">
+                  <legend class="catalog-filter-title filter-title-price">Стоимость, ₽:</legend>
                   <div class="range-label">
                     <label class="range-field-text">
                       <input class="range-input" type="number" name="price-min" min="0" value="0" placeholder="Цена">
@@ -147,7 +147,7 @@
                     </div>
                   </div>
                 </fieldset>
-                <div class="catalog-filter-price-button">
+                <div class="filter-price-button">
                   <button class="button" type="submit">Применить</button>
                   <button class="button button-reset" type="reset">Сбросить</button>
                 </div>
@@ -163,18 +163,18 @@
               <option value="popular">Сначала популярные</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
-            <ul class="type-button-results-list">
-              <li class="type-button-results-item type-button-results-item-selected">
+            <ul class="select-results-list">
+              <li class="select-results-item results-item-selected">
                 <a class="button-selected button-selected-icon" href="#">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
-              <li class="type-button-results-item">
+              <li class="select-results-item">
                 <a class="button-selected" href="#">
                   <span class="visually-hidden">Показать во весь экран</span>
                 </a>
               </li>
-              <li class="type-button-results-item">
+              <li class="select-results-item">
                 <a class="button-selected button-selected-list" href="#">
                   <span class="visually-hidden">Показать список</span>
                 </a>
@@ -193,7 +193,7 @@
                 <span class="p-apartment type-apartament">Гостиница</span>
                 <span class="p-apartment apartment-price">От 4000 ₽</span>
                 <a class="button button-apartment-detail" href="#">Подробнее</a>
-                <button class="button button-apartment-for-select" type="button">В избранное</button>
+                <button class="button button-apartment-add" type="button">В избранное</button>
                 <span class="visually-hidden">Категория гостиницы 4 звезды</span>
                 <div class="apartment-category">
                   <span class="star"></span>
@@ -233,7 +233,7 @@
                 <span class="p-apartment type-apartament">Гостиница</span>
                 <span class="p-apartment apartment-price">От 2500 ₽</span>
                 <a class="button button-apartment-detail" href="#">Подробнее</a>
-                <button class="button button-apartment-for-select" type="button">В избранное</button>
+                <button class="button button-apartment-add" type="button">В избранное</button>
                 <span class="visually-hidden">Категория гостиницы 3 звезды</span>
                 <div class="apartment-category">
                   <span class="star"></span>
@@ -252,7 +252,7 @@
                 <span class="p-apartment type-apartament">Гостиница</span>
                 <span class="p-apartment apartment-price">От 1500 ₽</span>
                 <a class="button button-apartment-detail" href="#">Подробнее</a>
-                <button class="button button-apartment-for-select" type="button">В избранное</button>
+                <button class="button button-apartment-add" type="button">В избранное</button>
                 <span class="visually-hidden">Категория гостиницы 2 звезды</span>
                 <div class="apartment-category">
                   <span class="star"></span>
