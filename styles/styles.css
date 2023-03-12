@@ -104,10 +104,13 @@ body {
 }
 
 /*HEADER*/
+.header-main {
+  width: 1200px;
+}
+
 .header-navigation {
   position: relative;
   display: flex;
-  width: 1200px;
   margin: 0 auto;
   align-items: center;
   font-weight: 700;
@@ -219,6 +222,12 @@ body {
 
 /*MAIN*/
 .main-index {
+  flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-inner {
   flex-grow: 1;
   width: 1200px;
   margin: 0 auto;
@@ -365,7 +374,7 @@ body {
 .service-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 400px;
   min-height: 385px;
   padding: 81px 85px;
@@ -383,7 +392,7 @@ body {
   display: block;
   width: 75px;
   height: 72px;
-  margin: 0 77px 30px;
+  margin: 0 auto 30px;
   background: url("../images/index/service/service-home.svg") no-repeat;
 }
 
@@ -719,6 +728,7 @@ a[href^="tel:"]:active {
 }
 
 .catalog-filter-title {
+  max-width: 150px;
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
