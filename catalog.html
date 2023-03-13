@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -39,7 +41,7 @@
               </a>
             </li>
             <li>
-              <button class="button button-header" type="button">Хочу сюда!</button>
+              <a class="button button-header" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -106,7 +108,8 @@
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="house-type" value="motel">
+                        <input class="visually-hidden control-input" type="radio" name="house-type" value="motel"
+                          disabled>
                         <span class="control-mark"></span>
                         <span class="control-label">Мотель</span>
                       </label>
@@ -126,11 +129,13 @@
                   <legend class="catalog-filter-title filter-title-price">Стоимость, ₽:</legend>
                   <div class="range-label">
                     <label class="range-field-text">
-                      <input class="range-input" type="number" name="price-min" min="0" value="0" placeholder="Цена">
+                      <input class="range-input" type="number" name="price-min" min="0" value="0" placeholder="Цена"
+                        required>
                       <span>от</span>
                     </label>
                     <label class="range-field-text">
-                      <input class="range-input" type="number" name="price-max" value="9000" placeholder="Цена">
+                      <input class="range-input" type="number" name="price-max" value="9000" placeholder="Цена"
+                        required>
                       <span>до</span>
                     </label>
                   </div>
@@ -367,6 +372,91 @@
       </footer>
 
     </div>
+    <div class="modal-container modal-container-close">
+
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.49 1.783 13.199.49 7.49 6.198 1.783.491.49 1.783 6.198 7.49.49 13.198l1.293 1.293L7.49 8.783l5.708 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <p class="field-group">
+              <label class="form-label" for="check-in-date">Дата заезда:</label>
+              <input class="form-field" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020"
+                placeholder="Укажите дату" required>
+            </p>
+            <p class="modal-message modal-message-error">Мы не можем отправить вас в прошлое.</p>
+            <p class="field-group">
+              <label class="form-label" for="check-out-date">Дата выезда:</label>
+              <input class="form-field" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023"
+                placeholder="Укажите дату" required>
+            </p>
+            <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
+
+            <div class="field-group field-group-adults">
+              <div class="adults">
+                <label class="form-label form-label-adults" for="adults">Взрослые:</label>
+                <button class="button-plus" type="button">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9v2h14V9H3Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <input class="adults-field" type="number" id="adults" name="adults" value="2" placeholder="0" required>
+                <button class="button-plus" type="button">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+              <div class="child">
+                <span class="form-label form-label-icon">
+                  <label class="form-label" for="child">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26"
+                        viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3"></circle>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff">
+                        </path>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <button class="button-plus" type="button">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9v2h14V9H3Z" fill="currentColor" />
+                  </svg>
+                </button>
+                <input class="adults-field" type="number" id="child" name="child" value="2" placeholder="0" required>
+                <button class="button-plus" type="button">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button class="button modal-search-button" type="button">Найти</button>
+          </form>
+        </section>
+
+      </div>
+    </div>
+
   </body>
 
 </html>

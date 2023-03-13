@@ -97,7 +97,8 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button:disabled {
+.button:disabled,
+input:disabled {
   color: #ffffff;
   background: #e5e5e5;
   cursor: default;
@@ -129,7 +130,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   max-width: 350px;
-  margin: 0 auto auto 70px;
+  margin: 0 70px auto auto;
 }
 
 .header-logo-link {
@@ -175,13 +176,13 @@ body {
   box-sizing: border-box;
 }
 
-.header-navigation-user .header-navigation-item:nth-child(1) .header-navigation-link {
+.header-navigation-user .header-navigation-item:nth-child(1) {
   background-image: url("../images/header/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.header-navigation-user .header-navigation-item:nth-child(2) .header-navigation-link {
+.header-navigation-user .header-navigation-item:nth-child(2) {
   background-image: url("../images/header/favourites.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -204,6 +205,8 @@ body {
   width: 160px;
   margin: 14px 0 14px 20px;
   padding: 8px 34px;
+  font-family: inherit;
+  color: #ffffff;
   background-color: #756157;
   border: 0;
 }
@@ -308,14 +311,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 400px;
-  padding: 112px 85px;
+  padding: 112px 84px;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
   box-sizing: border-box;
 }
 
 .advantages-subtitle {
-  margin: 0;
+  margin: 0 auto;
+  width: 175px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -795,8 +799,14 @@ a[href^="tel:"]:active {
 }
 
 .control:active .control-mark,
-.control:hover .control-label {
+.control:active .control-label {
   opacity: 0.3;
+}
+
+input:disabled ~ .control-label {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
+  cursor: default;
 }
 
 .filter-title-price {
@@ -1369,6 +1379,7 @@ input[name="price-max"] {
 .field-group {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 577px;
   padding: 0;
   margin: 0;
@@ -1427,12 +1438,16 @@ input[name="price-max"] {
   color: #ff5757;
 }
 
-.field-group-adults {
-  justify-content: flex-start;
-}
-
 .form-label-adults {
   margin-right: 46px;
+}
+
+.adults {
+  display: flex;
+}
+
+.child {
+  display: flex;
 }
 
 .button-plus {
@@ -1558,8 +1573,7 @@ input[name="price-max"] {
 
 .form-label-icon {
   position: relative;
-  padding-right: 40px;
-  margin: 0 24px 0 88px;
+  padding-right: 46px;
 }
 
 .tooltip-text:after {
