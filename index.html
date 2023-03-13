@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -12,12 +14,12 @@
       <header class="header-main">
         <nav class="header-navigation">
           <a class="header-logo-link">
-            <img class="header-logo" width="140" height="70" src="images/header/logo-sedona2.svg"
+            <img class="header-logo" width="140" height="70" src="images/header/logo-sedona.svg"
               alt="Логотип города Седона.">
           </a>
           <ul class="header-navigation-list">
             <li class="header-navigation-item">
-              <a class="header-navigation-link header-navigation-link-current" href="index.html">Главная</a>
+              <a class="header-navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="header-navigation-item">
               <a class="header-navigation-link" href="#">О Седоне</a>
@@ -39,7 +41,7 @@
               </a>
             </li>
             <li>
-              <button class="button button-header" type="submit">Хочу сюда!</button>
+              <a class="button button-header" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -47,10 +49,10 @@
       <main class="main-index">
         <section class="hero">
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-          <img class="hero-welcome-vector" width="458" height="352" src="images/index/welcome-text.svg"
+          <img width="458" height="352" src="images/index/welcome-text.svg"
             alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         </section>
-        <section class="advantages">
+        <section>
           <div class="advantages-title-annotation">
             <h2 class="section-title advantages-title">Седона — небольшой городок в Аризоне, заслуживающий
               большего!</h2>
@@ -71,12 +73,12 @@
                 близко</p>
             </li>
             <li class="advantages-item advantages-item-road">
-              <h3 class="advantages-subtitle advantages-subtitle-dark">Красивая<br>дорога</h3>
+              <h3 class="advantages-subtitle advantages-subtitle-dark">Красивая дорога</h3>
               <p class="advantages-description advantages-description-dark">Ехать в Седону
                 из&nbsp;Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages-item advantages-item-tourists">
-              <h3 class="advantages-subtitle advantages-subtitle-dark">Мало<br>туристов</h3>
+              <h3 class="advantages-subtitle advantages-subtitle-dark">Мало туристов</h3>
               <p class="advantages-description advantages-description-dark">Большинство едет в Гранд Каньон и толпится
                 там</p>
             </li>
@@ -87,16 +89,14 @@
                 <h3 class="advantages-subtitle">Там есть<br>мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-
             </li>
           </ul>
         </section>
-        <section class="service">
+        <section>
           <div class="service-title-annotation">
             <h2 class="section-title service-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="annotation">Опытный персонал и качественное обслуживание!</p>
           </div>
-
           <ul class="service-list">
             <li class="service-item">
               <h3 class="service-subtitle">Жильё</h3>
@@ -104,7 +104,7 @@
             </li>
             <li class="service-item service-item-food">
               <h3 class="service-subtitle service-subtitle-food">Еда</h3>
-              <p class="service-description">Всегда заказывайте <br>топовый фирменный бургер,<br>вы не разочаруетесь!
+              <p class="service-description">Всегда заказывайте <br>топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
             <li class="service-item">
@@ -174,7 +174,7 @@
           </section>
           <section class="footer-contacts">
             <h3 class="visually-hidden">Телефон компании</h3>
-            <a class="contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
+            <a href="tel:+78121212">+7 (812) 812-12-12</a>
           </section>
           <section class="footer-logo">
             <h3 class="visually-hidden">Сайт компании</h3>
@@ -201,13 +201,13 @@
             </a>
           </section>
         </div>
-
       </footer>
 
     </div>
     <div class="modal-container modal-container-close">
+
       <div class="modal">
-        <button type="button" class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 15 15"
             xmlns="http://www.w3.org/2000/svg">
@@ -222,37 +222,41 @@
 
             <p class="field-group">
               <label class="form-label" for="check-in-date">Дата заезда:</label>
-              <input class="form-field date-field" type="text" id="check-in-date" name="check-in-date"
-                value="27 апреля 2020" placeholder="Укажите дату">
+              <input class="form-field" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020"
+                placeholder="Укажите дату" required>
             </p>
             <p class="modal-message modal-message-error">Мы не можем отправить вас в прошлое.</p>
             <p class="field-group">
               <label class="form-label" for="check-out-date">Дата выезда:</label>
-              <input class="form-field date-field" type="text" id="check-out-date" name="check-out-date"
-                value="1 сентября 2023" placeholder="Укажите дату">
+              <input class="form-field" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023"
+                placeholder="Укажите дату" required>
             </p>
             <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
-            <div class="visitor">
-              <p class="field-group field-group-adults">
+
+            <div class="field-group field-group-adults">
+              <div class="adults">
                 <label class="form-label form-label-adults" for="adults">Взрослые:</label>
-                <button type="button" class="button-plus">
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="button-plus" type="button">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9v2h14V9H3Z" fill="currentColor" />
                   </svg>
                 </button>
-                <input class="adults-field" type="number" id="adults" name="adults" value="2" placeholder="0">
-                <button type="button" class="button-plus">
+                <input class="adults-field" type="number" id="adults" name="adults" value="2" placeholder="0" required>
+                <button class="button-plus" type="button">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor" />
                   </svg>
                 </button>
+              </div>
+              <div class="child">
                 <span class="form-label form-label-icon">
-                  <label class="form-label form-label-child" for="child">Дети:</label>
+                  <label class="form-label" for="child">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26"
+                        viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="13" cy="13" r="13" fill="#83B3D3"></circle>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff">
                         </path>
@@ -263,28 +267,31 @@
                       размещаются бесплатно.</span>
                   </span>
                 </span>
-                <button type="button" class="button-plus">
+                <button class="button-plus" type="button">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 9v2h14V9H3Z" fill="currentColor" />
                   </svg>
                 </button>
-                <input class="adults-field" type="number" id="child" name="child" value="2" placeholder="0">
-                <button type="button" class="button-plus">
+                <input class="adults-field" type="number" id="child" name="child" value="2" placeholder="0" required>
+                <button class="button-plus" type="button">
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor" />
                   </svg>
                 </button>
-              </p>
+              </div>
             </div>
 
-            <button class="button modal-search-button">Найти</button>
+
+
+            <button class="button modal-search-button" type="button">Найти</button>
           </form>
         </section>
 
       </div>
     </div>
+
   </body>
 
 </html>
