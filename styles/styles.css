@@ -314,6 +314,7 @@ input:disabled {
 }
 
 .advantages-image {
+  object-fit: cover;
   height: 100%;
 }
 
@@ -1113,8 +1114,7 @@ input[name="price-max"] {
 }
 
 .button-reset:focus {
-  outline: none;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   background-color: transparent;
 }
 
@@ -1900,7 +1900,6 @@ input[name="price-max"] {
   position: absolute;
   left: 50%;
   z-index: 1;
-
   display: none;
   width: 218px;
   padding: 19px 18px 24px 22px;
@@ -1932,7 +1931,7 @@ input[name="price-max"] {
 }
 
 .tooltip-text:after {
-  content: '';
+  content: "";
   position: absolute;
   top: -8px;
   left: 0;
