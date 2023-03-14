@@ -1113,8 +1113,7 @@ input[name="price-max"] {
 }
 
 .button-reset:focus {
-  outline: none;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   background-color: transparent;
 }
 
