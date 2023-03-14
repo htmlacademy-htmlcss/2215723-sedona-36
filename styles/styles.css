@@ -1899,7 +1899,6 @@ input[name="price-max"] {
   position: absolute;
   left: 50%;
   z-index: 1;
-
   display: none;
   width: 218px;
   padding: 19px 18px 24px 22px;
@@ -1931,7 +1930,7 @@ input[name="price-max"] {
 }
 
 .tooltip-text:after {
-  content: '';
+  content: "";
   position: absolute;
   top: -8px;
   left: 0;
