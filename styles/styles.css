@@ -1930,7 +1930,7 @@ input[name="price-max"] {
   padding-right: 46px;
 }
 
-.tooltip-text:after {
+.tooltip-text::after {
   content: "";
   position: absolute;
   top: -8px;
